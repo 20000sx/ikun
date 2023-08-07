@@ -8,7 +8,7 @@
     "build": "vue-script build",
     "commit": "git-cz && git push",
     "release": "standard-version",
-    "deploy":"gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "release:alpha": "standard-version --prerelease alpha",
     "release:rc": "standard-version --prerelease rc",
     "release:major": "pnpm run release -- --release-as major",
@@ -19,11 +19,12 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@laconic/vue-script": "^1.0.0",
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
+    "@laconic/vue-script": "^1.0.0",
     "commitizen": "^4.3.0",
     "cz-git": "^1.6.1",
+    "gh-pages": "^5.0.0",
     "husky": "^8.0.3",
     "standard-version": "^9.5.0"
   },
